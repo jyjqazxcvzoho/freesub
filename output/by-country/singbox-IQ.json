@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "www.speedtest.net",
+      "server": "104.17.148.22",
       "server_port": 443,
-      "uuid": "b19419fa-8009-455b-b059-765e2856883a",
+      "password": "Telegram_healer_config",
       "tls": {
         "enabled": true,
-        "server_name": "akbarian34.j9z65ce2uyks.workers.dev",
+        "server_name": "30F67SBQ8jJwmT7GyTFc14.0m68-QZ3hQyFnlar6N3IQ.WoRKErS.deV",
         "insecure": false,
         "alpn": [
           "http/1.1"
@@ -23,9 +23,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vl/3Qe9Fv1V2cqEtXyBQApZYi?ed=2560",
+        "path": "/tr/D0RNup7f2Tt0Tna3gVu5OvfMJYJjD?ed=2560",
         "headers": {
-          "Host": "akbarian34.j9z65ce2uyks.workers.dev"
+          "Host": "30f67sbq8jjwmt7gytfc14.0m68-qz3hqyfnlar6n3iq.workers.dev"
         }
       }
     },
