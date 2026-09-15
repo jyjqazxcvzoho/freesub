@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 162.159.24.131
-  port: 2082
+  server: 172.64.229.170
+  port: 2052
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -28,17 +28,6 @@ proxies:
     short-id: e8daed2d
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
-  server: 45.130.125.75
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
 rules:
 - MATCH,PROXIES
